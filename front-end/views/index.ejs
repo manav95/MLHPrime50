@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouSnipper.com YouTube to Snippets of Code in one shot</title>
+    <link rel="stylesheet" href="/stylesheets/foundation.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/icons.css" />
+    <script src="/javascripts/ajaxupload.js" type="text/javascript"></script>
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="/stylesheets/jquery.fileupload.css">
+    <!-- CSS adjustments for browsers with JavaScript disabled -->
+    <noscript><link rel="stylesheet" href="/stylesheets/jquery.fileupload-noscript.css"></noscript>
+    <noscript><link rel="stylesheet" href="/stylesheets/jquery.fileupload-ui-noscript.css"></noscript>
+    <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+</head>
+
+  <body>
+  	<!--TOGGLE HEADER NAVIGATION FOR MOBILE-->
+  	<div class="title-bar" data-responsive-toggle="header-nav" data-hide-for="large">
+	  <button class="menu-icon" type="button" data-toggle></button>
+	  <div class="title-bar-title">Menu</div>
+	</div>
+  	<!--HEADER NAVIGATION-->
+  	<div id="header-nav" class="menu-centered">
+      <ul id="header-nav-content" class="menu" data-responsive-menu="drilldown medium-dropdown">
+        <li><a href="#about">Start</a></li>
+      </ul>
+    </div>
+  	<!--HEADER-->
+    <header id="header" class="header full-height">
+    	<div class="row">
+		  <div class="small-12 large-offset-2 large-8 columns">
+			<h1>YouSnipper.com YouTube to Snippets of Code in one shot</h1>
+              </br>
+		  	<p>Created at MLH Spring Final 2016 by <br>
+                 <br>Manav Dutta,
+                 <br>Saffana Humaira ,
+                 <br>Gia Rodriguez &amp;
+                 <br>Fernando Icaza</p>
+		  </div>
+		</div>
+
+	</header>
+	<!--STICKY NAVIGATION-->
+	<div data-sticky-container>
+	  <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
+	    <div class="top-bar show-for-large">
+	      <div class="top-bar-title">
+	        <a href="#header-nav"><h2>YouSnipper.com</h2></a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<br />
+	<!--BEGIN MAIN CONTENT-->
+	<div id="content">
+	<!--ABOUT-->
+		<section class="about">
+                <form id="fileupload" action="http://localhost:5000/process" method="POST" enctype="multipart/form-data">
+
+                    <div class="section-header">
+                        <br><br><br>
+                        <h2>Follow these steps to get started:</h2>
+                    </div>
+                    <div class='row' id="about">
+                        <div class="small-12 large-12 columns">
+                        <p>1: Visit Youtube.com or alternative video site using Chrome.</p>
+                        <br>
+                        <p>2: Take a screenshot of a video using keyboard shortcuts.</p>
+                        <br>
+                        <p>3: Upload your image using this website</p>
+
+                        <div class="small-12 columns">
+
+                            <input type="file" id="fileInput" class="file-input">
+
+                            <button id="submitButton" class="large button">Submit</button>
+
+                <br>
+                <br>
+			     <p>4: String of text is returned to end user either by making the code available on clipboard or is displayed on a textarea field.</p>
+            </div>
+
+		</section>
+
+
+			<div id="footer-top">
+				<div class="row">
+					<div class="small-12 large-6 columns divider-line">
+						<p><b>YouSnipper.com</b><br/>
+						Created at MLH Spring 2016</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- FOOTER -->
+	<div id="footer-bottom">
+		<div class="row">
+			<div class="small-12 large-6 columns">
+				<ul>
+		          <li><a href="#">About</a></li>
+			</div>
+			<div class="small-12 large-6 columns">
+				<p>Copyright &#169; 2016 YouSnipper.com, All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPTS -->
+   	<script src="/javascripts/vendor/jquery.js"></script>
+    <script src="/javascripts/vendor/what-input.js"></script>
+    <script src="/javascripts/vendor/foundation.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

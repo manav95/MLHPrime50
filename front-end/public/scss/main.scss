@@ -1,0 +1,18 @@
+.header {
+  padding: 10rem 0;
+  background: url('http://placehold.it/2000x500&text=this is a header') center center no-repeat;
+  background-size: cover;
+}
+[data-sticky] {
+  width: 100%;
+}
+.top-bar {
+  padding: 2rem;
+  transition: padding .25s ease;
+}
+.is-stuck .top-bar {
+  padding: 1rem;
+  transition: padding .25s ease;
+}
+
+

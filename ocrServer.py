@@ -1,3 +1,5 @@
+import SocketServer
+import SimpleHTTPServer
 from flask import Flask, request
 import json, io
 import PIL
