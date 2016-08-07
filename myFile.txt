@@ -1,36 +1,20 @@
-using System;
-using Gtk;
-
-public class Mainwindow: Gtk.window
-{
-protected Gtk.TextView logTextView;
-
-public Mainwindow (): base ("")
-{
-
-Stetic.Gui.Build (this, typeof(Mainwindow));
-}
-
-protected void OnDeleteEvent (object sender, DeleteEventArgs a)
-{
-
-Application.Quit ();
-
-a.RetVal = true;
-}
-
-protected virtual void OnOpen(object sender, System.EventArgs e)
+Jnamespace MyFirstProject.day1.examples
 
 {
-}
 
-protected virtual void OnClose(object sender, System.EventArgs e)
+1 class ExampleString
 
 {
-}
 
-protected virtual void OnExit(object sender, System.EventArgs e)
+1 static void Main()
 {
 
-Application.Quit();
-}
+//manipu1ate text
+string x = "David Beckham";
+Console.NriteLine("Hello " + x);
+Console.writeLine(x);
+Console.writeLine(x.Substring(2))f//vid Beckham
+Console.writeLine(x.Substring(4, £));//d Bec
+Console.writeLine(x.Index0f("v"));//2
+
+Console.writeLine(x[1]);//a
